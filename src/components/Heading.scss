@@ -1,0 +1,8 @@
+.xmas {
+	background-color: green;
+	color: red;
+	font-size: 5em;
+	&--active {
+		font-size: initial;
+	}
+}

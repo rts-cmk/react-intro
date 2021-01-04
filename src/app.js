@@ -6,12 +6,12 @@ function App() {
 	return (
 		<>
 			<h1>Hej fra React</h1>
-			<Heading/>
-			<Heading/>
-			<Heading/>
-			<Heading/>
-			<Heading/>
-			<Heading/>
+			<Heading>
+				Ostehaps
+			</Heading>
+			<Heading>
+				Pølsehorn
+			</Heading>
 		</>
 	);
 };

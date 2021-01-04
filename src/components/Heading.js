@@ -1,7 +1,8 @@
 import React from "react";
+import "./Heading.scss";
 
-function Heading() {
-	return <h1>Hello, from React</h1>;
+function Heading(props) {
+	return <h1 className="xmas--active">{ props.children }</h1>;
 }
 
 export default Heading;
