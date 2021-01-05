@@ -1,11 +1,21 @@
+// app.js
 import React from "react";
 import { render } from "react-dom";
 import SiteHeader from "./components/SiteHeader";
+import { Router } from "@reach/router";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Products from "./pages/Products";
 
 function App() {
 	return (
 		<>
 			<SiteHeader/>
+			<Router>
+				<Home path="/" />
+				<Contact path="/contact" />
+				<Products path="/products" />
+			</Router>
 		</>
 	);
 };
