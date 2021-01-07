@@ -1,11 +1,13 @@
 // Brand.js
 import React from "react";
+import { Link } from "@reach/router";
+import "./Brand.scss";
 
 function Brand() {
 	return (
-		<a href="/">
+		<Link to="/" className="brand">
 			<img src="https://via.placeholder.com/100x100" />
-		</a>
+		</Link>
 	);
 }
 

@@ -1,0 +1,18 @@
+// Utility.scss
+.utility {
+	grid-area: utility;
+	display: flex;
+	justify-content: space-between;
+	&__icon {
+		color: white;
+		text-decoration: none;
+		padding: 0.3em 0.5em;
+	}
+	&__button {
+		color: white;
+		background: linear-gradient(hsl(219, 82%, 64%), hsl(219, 49%, 52%));
+		display: inline-block;
+		padding: 0.2em 0.3em;
+		border-radius: 5px;
+	}
+}

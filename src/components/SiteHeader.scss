@@ -1,0 +1,10 @@
+// SiteHeader.scss
+.siteHeader {
+	display: grid;
+	background-color: rgb(87, 66, 39);
+	grid-template-rows: 3em 3em 9em;
+	grid-template-columns: 4fr 1fr;
+	grid-template-areas: ". utility"
+											 "nav nav"
+											 "brand brand";
+}

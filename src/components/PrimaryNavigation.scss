@@ -1,0 +1,22 @@
+// PrimaryNavigation.scss
+.primaryNavigation {
+	grid-area: nav;
+	border-top: 1px solid rgb(169, 111, 58);
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	ul {
+		display: flex;
+		justify-content: space-between;
+		width: 35%;
+	}
+	&__link {
+		color: white;
+		text-transform: uppercase;
+		font-weight: 700;
+		text-decoration: none;
+		&:hover {
+			color: rgb(169, 111, 58);
+		}
+	}
+}

@@ -2,10 +2,11 @@
 import React from "react";
 import { render } from "react-dom";
 import SiteHeader from "./components/SiteHeader";
-import { Router } from "@reach/router";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Products from "./pages/Products";
+import { Router } from "@reach/router";
+import "./global.scss";
 
 function App() {
 	return (
@@ -14,7 +15,7 @@ function App() {
 			<Router>
 				<Home path="/" />
 				<Contact path="/contact" />
-				<Products path="/products" />
+				<Products path="/shop" />
 			</Router>
 		</>
 	);

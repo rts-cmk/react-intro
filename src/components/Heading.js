@@ -1,3 +1,4 @@
+// Heading.js
 import React from "react";
 import "./Heading.scss";
 
