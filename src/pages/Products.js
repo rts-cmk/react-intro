@@ -1,27 +1,22 @@
 // Products.js
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Card from "../components/Card";
 import Heading from "../components/Heading";
 
-var products = [
-	{
-		name: "Samsung Galaxy",
-		image: "https://via.placeholder.com/100x100",
-		price: "DKK 3.000"
-	},
-	{
-		name: "Bose Headset",
-		image: "https://via.placeholder.com/100x100",
-		price: "DKK 2.500"
-	},
-	{
-		name: "En Dims Der Er Dyr",
-		image: "https://via.placeholder.com/100x100",
-		price: "DKK 10.000"
-	},
-];
-
 function Products() {
+	var [products, setProducts] = useState([])
+
+	useEffect(function() {
+		fetch("https://hifi-corner.herokuapp.com/api/v1/products")
+			.then(function(response) {
+				return response.json();
+			})
+			.then(function(data) {
+				console.log(data);
+				setProducts(data);
+			});
+	}, []);
+
 	return (
 		<>
 			<Heading>Products</Heading>
