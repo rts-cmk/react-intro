@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "../components/Card";
 import Heading from "../components/Heading";
+import "./Products.scss";
 
 function Products() {
 	var [products, setProducts] = useState([])
@@ -20,9 +21,11 @@ function Products() {
 	return (
 		<>
 			<Heading>Products</Heading>
+			<section className="productList">
 			{products.map(function(product) {
-				return <Card key={product.name} product={product} />
+				return <Card key={product.sku} product={product} />
 			})}
+			</section>
 		</>
 	);
 }

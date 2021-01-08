@@ -1,0 +1,25 @@
+// Card.scss
+.productCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.5em 1em;
+	&__image {
+		border: 1px solid hsl(0, 0%, 80%);
+	}
+	&__name {
+		text-transform: uppercase;
+	}
+	&__price {
+		color: hsl(31, 41%, 52%);
+	}
+	&__button {
+		border: none;
+		appearance: none;
+		background-color: hsl(31, 41%, 52%);
+		color: hsl(0, 0%, 97%);
+		width: 40%;
+		padding: 0.4em 0;
+		text-transform: uppercase;
+	}
+}

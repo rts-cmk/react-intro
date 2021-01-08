@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Products from "./pages/Products";
 import { Router } from "@reach/router";
 import "./global.scss";
+import Product from "./pages/Product";
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 				<Home path="/" />
 				<Contact path="/contact" />
 				<Products path="/shop" />
+				<Product path="/product/:sku" />
 			</Router>
 		</>
 	);
