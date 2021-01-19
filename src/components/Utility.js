@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "@reach/router";
 import "./Utility.scss";
+import ShoppingCart from "./ShoppingCart";
 
 function Utility() {
 	return (
@@ -18,6 +19,7 @@ function Utility() {
 			<Link to="/subscribe" className="utility__button">
 				<i className="fas fa-envelope"></i> | Subscribe
 			</Link>
+			<ShoppingCart />
 		</div>
 	);
 }

@@ -1,5 +1,5 @@
 // app.js
-import React from "react";
+import React, { useState } from "react";
 import { render } from "react-dom";
 import SiteHeader from "./components/SiteHeader";
 import Home from "./pages/Home";
@@ -8,10 +8,13 @@ import Products from "./pages/Products";
 import { Router } from "@reach/router";
 import "./global.scss";
 import Product from "./pages/Product";
+import ShoppingCartContext from "./ShoppingCartContext";
 
 function App() {
+  var shoppingCart = useState([]);
+
 	return (
-		<>
+		<ShoppingCartContext.Provider value={shoppingCart}>
 			<SiteHeader/>
 			<Router>
 				<Home path="/" />
@@ -19,7 +22,7 @@ function App() {
 				<Products path="/shop" />
 				<Product path="/product/:sku" />
 			</Router>
-		</>
+		</ShoppingCartContext.Provider>
 	);
 };
 
