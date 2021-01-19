@@ -1,0 +1,32 @@
+// src/components/ShoppingCart.scss
+.shoppingCartContainer {
+	position: relative;
+}
+
+.shoppingCart {
+	z-index: 10;
+	background-color: white;
+	border: 1px solid hsl(29, 50%, 36%);
+	border-radius: 5px;
+	padding: 1em;
+	position: absolute;
+	top: 1rem;
+	right: 0;
+	&--hidden {
+		display: none;
+	}
+	&__item {
+		list-style: none;
+		&:not(:last-of-type) {
+			border-bottom: 1px dashed black;
+		}
+		article {
+			display: flex;
+			justify-content: space-between;
+			img {
+				height: 50px;
+				width: auto;
+			}
+		}
+	}
+}

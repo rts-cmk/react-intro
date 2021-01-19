@@ -9,16 +9,8 @@ function Card({ product }) {
 		<ShoppingCartContext.Consumer>
 			{function([shoppingCart, setShoppingCart]) {
 				function putInCart(event) {
-					shoppingCart.push({
-						make: product.make,
-						model: product.model,
-						price: product.price,
-						image: product.images[0],
-						sku: product.sku,
-						description: product.description
-					});
-
-					setShoppingCart(shoppingCart);
+					var newArray = [...shoppingCart, product];
+					setShoppingCart(newArray);
 				}
 
 				return (
